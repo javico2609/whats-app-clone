@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whats_app_clone/models/chat_model.dart';
-import '../data/chats_data.dart';
+import 'package:whats_app_clone/data/chats_data.dart';
 
 class ChatsScreen extends StatefulWidget {
   @override
