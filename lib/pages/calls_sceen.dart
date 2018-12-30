@@ -35,15 +35,10 @@ class CallsScreen extends StatelessWidget {
                         padding: EdgeInsets.only(top: 5.0),
                         child: new Row(
                           children: <Widget>[
-                            new Transform(
-                              transform: new Matrix4.identity()
-                                ..rotateZ(-50 * 3.1415927 / 180),
-                              alignment: FractionalOffset.center,
-                              child: new Icon(
-                                Icons.arrow_back,
-                                size: 20.0,
-                                color: Theme.of(context).accentColor,
-                              ),
+                            new Icon(
+                              Icons.call_received,
+                              size: 20.0,
+                              color: Theme.of(context).accentColor,
                             ),
                             new Text(
                               call.time,
