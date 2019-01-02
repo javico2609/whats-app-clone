@@ -72,10 +72,30 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
         }
       case 2:
         {
-          return new FloatingActionButton(
-            backgroundColor: Theme.of(context).accentColor,
-            child: new Icon(Icons.camera_alt, color: Colors.white),
-            onPressed: () => print('Hola!!'),
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.only(bottom: 10.0),
+                child: new FloatingActionButton(
+                  backgroundColor: Colors.grey[200],
+                  child: new Icon(
+                    Icons.edit,
+                    color: Colors.black,
+                  ),
+                  onPressed: () => print('Hola!!'),
+                ),
+              ),
+              new FloatingActionButton(
+                backgroundColor: Theme.of(context).accentColor,
+                child: new Icon(
+                  Icons.camera_alt,
+                  color: Colors.white,
+                ),
+                onPressed: () => print('Hola!!'),
+              ),
+            ],
           );
         }
       case 3:
