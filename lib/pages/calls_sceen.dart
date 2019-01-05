@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whats_app_clone/data/calls_data.dart';
 import 'package:whats_app_clone/models/call_model.dart';
+import 'package:whats_app_clone/pages/call_details.dart';
 
 class CallsScreen extends StatelessWidget {
   @override
@@ -56,6 +57,14 @@ class CallsScreen extends StatelessWidget {
                   )
                 ],
               ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  new MaterialPageRoute(
+                    builder: (context) => new CallDetail(call: calls[index]),
+                  ),
+                );
+              },
             )
           ],
         );
